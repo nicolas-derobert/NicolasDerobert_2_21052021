@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html>
    <head>
+    <meta charset="utf-8" />
+        <link rel="stylesheet" href="fichier-css.css" />
+        <script src="https://kit.fontawesome.com/aa1f9ebfe3.js" crossorigin="anonymous"></script>
+        <title>Premiers tests du CSS</title>
        </head>
 <body>
     <!-- Header -->
        <header>
         <!-- Titre Reservia -->
         <h1>Réservia</h1>
-        <nav>Hébergements Activités S'inscrire</nav>
+        <a href="">S'inscrire</a>
+        <nav>Hébergements Activités </nav>
         <!-- Article leitmotiv -->
         <article>
             <h2>Trouver votre hébergement pour des vacances de rêves</h2>
-            <p>En plei centre ville ou en pleine nature</p>
+            <p>En plein centre ville ou en pleine nature</p>
         </article>
         <!-- Article Recherche -->
-        <article>
+        <form method="POST" action="traitement.php">
             <!--Logo localisation  -->
-            <p>Marseille,France</p>
-            <!-- Bouton rechercher -->
+            <label for="saisie-lieu" class="label-avec-logo"><i class="fas fa-map-marker-alt"></i></label>
+            <input type="text" name="saisie-lieu" id="saisie-lieu" value="Marseille, France">
+            <input class="bouton"  type="submit" value="Rechercher">
             <P>Filtres</P>
-            2conomique
+            <input type="checkbox" class="checkbox">
+            Economique
             Familial
             Romantique
             Animaux autorisés
             <!-- Logo i -->
             <p>Plus de 500 logement disponibles dans cette villes</p>
-        </article>
+        </form>
 
     </header>
     <main>
            
-        <article>
+        <article class="article-hebergement">
                <section id="hebergement-bloc1">
+                <a href="">
+                <img src="" alt=""/>
+                <p class="titrevignette"></p>
+                <p class="textvignette"></p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-dog"></i>
+                
+                <i class="fas fa-money-bill-wave-alt"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-child"></i>
+                <i class="fas fa-info"></i>
+                <i class="fas fa-chart-line"></i>
+
+</a>
                    </section> 
 
 
@@ -45,7 +66,7 @@
                <section id="hebergement-bloc4">
                    </section>
         </article>
-        <aside>
+        <aside class="aside-hebergement-populaire">
                <section id="hebergement-plus-populaire-bloc1">
                    </section> 
 
@@ -60,7 +81,7 @@
                <section id="hebergement-plus-populaire-bloc4">
                    </section>
         </aside>
-        <article>
+        <article class="article-activite"> 
               <section id="activite-bloc1">
                    </section>
             <section id="activite-bloc2">
@@ -68,6 +89,10 @@
             <section id="activite-bloc3">
                    </section>
             <section id="activite-bloc4">
+                   </section>
+                <section id="activite-bloc5">
+                   </section>
+                <section id="activite-bloc6">
                    </section>
         </article>
 

@@ -1,0 +1,87 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+</style>
+
+html{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    }
+header{
+
+}
+body{
+    /* background-color: #DEEBFF; */
+}
+footer{
+}
+p{
+    background-color: #86c29a; 
+    /* color: #0065FC;
+    color: #DEEBFF ;
+    color: #F2F2F2; */
+}
+button{
+
+}
+
+h1{
+
+}
+h2{
+
+}
+article{
+    background-color:#F2F2F2;
+}
+section{
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 5px #838383;
+    width: 25%;
+}
+
+.checkbox{
+    width: 80px;
+    height: 40px;
+    background: black;
+    border-radius: 22px;
+    cursor: pointer;
+    outline: none;
+}
+
+.fa-star, .fa-dog,  .fa-map-marker-alt, .fa-money-bill-wave-alt, .fa-heart, .fa-child, .fa-info {
+    color: #0065FC;
+}
+.fa-chart-line{
+    color: #000000;
+}
+.stargrey{
+background-color: #F2F2F2;
+}
+.logo-bouton{
+    background-color: #DEEBFF ;
+}
+.bouton{
+    background-color: #0065FC; 
+    color: #ffffff;
+}
+.label-avec-logo{
+    background-color: #F2F2F2;
+}
+
+.article-hebergement{
+    display: flex;
+    background-color: #F2F2F2;
+}
+.article-activite{
+    display: flex;
+}
+.aside-hebergement-populaire{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1280px)
+{
+
+}
