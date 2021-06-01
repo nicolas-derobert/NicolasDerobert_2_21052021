@@ -1,87 +1,180 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-</style>
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-html{
+html {
+  font-family: "Raleway", sans-serif;
+}
+body {
+  /* background-color: #DEEBFF; */
+  margin:15px;
+}
+header {
+    
+}
+
+#article-logo-et-nav nav{
     display: flex;
-    font-family: 'Raleway', sans-serif;
-    }
-header{
+    justify-content: flex-end;
+}
 
+footer {
+  background-color: #f2f2f2;
+  display: flex;
 }
-body{
-    /* background-color: #DEEBFF; */
+#section-apropos, #section-hebergement, #section-assistance{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: space-around;
 }
-footer{
+
+#logo-reservia{
+    position: absolute;
+    top:60px;
+    left:55px;
 }
-p{
-    background-color: #86c29a; 
-    /* color: #0065FC;
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  height: 100px;
+  margin: 0px;;
+  align-items: stretch;
+}
+nav ul li{
+margin: auto;
+width:150px;
+text-align: center;
+padding: 35px;
+}
+
+nav ul li:active{
+    border-top: solid ;
+    border-color: #0065fc;
+}
+p {
+
+  /* color: #0065FC;
     color: #DEEBFF ;
     color: #F2F2F2; */
 }
-button{
-
+a {
+  color: #000000;
+  text-decoration: none;
 }
 
-h1{
+#zonerecherche{
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 50px;
+}
+#saisie-lieu{
+  border-color: #f2f2f2;
+width: 235px;
+}
+#zonerecherche #recherchelieu{
+ border-color: #0065fc;
+   width: 220px;
+  }
+
+#label-avec-logo{
+margin: auto;
+height: 50px;
+width: 50px;
+background-color: #f2f2f2;
+border-radius: 10px,0px,0px,10px;
+align-items: stretch;
+}
+#label-avec-logo div{
+text-align: center;
+width: 50px;
+font-size: 25px;
+display: block;
 
 }
-h2{
+h1 {
+}
+h2 {
+}
+article {
+
 
 }
-article{
-    background-color:#F2F2F2;
+section {
+
 }
-section{
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 4px 4px 5px #838383;
-    width: 25%;
+/* Zone paramétrage des arcticles avec vignette
+TODO : optimiser selection des éléments 
+ */
+article.article-activite :nth-child(3) {
+}
+article.article-activite :nth-child(5) {
+}
+article.article-activite :nth-child(6) {
+}
+.fa-search{
+    display:none;
 }
 
-.checkbox{
-    width: 80px;
-    height: 40px;
-    background: black;
-    border-radius: 22px;
-    cursor: pointer;
-    outline: none;
+.fa-star,
+.fa-dog,
+.fa-money-bill-wave-alt,
+.fa-heart,
+.fa-child,
+.fa-info {
+  color: #0065fc;
+}
+.fa-map-marker-alt, .fa-chart-line {
+  color: #000000;
+}
+.stargrey {
+  background-color: #f2f2f2;
+}
+.logo-bouton {
+  background-color: #deebff;
+}
+.bouton {
+  background-color: #0065fc;
+  color: #ffffff;
+}
+.label-avec-logo {
+  background-color: #f2f2f2;
 }
 
-.fa-star, .fa-dog,  .fa-map-marker-alt, .fa-money-bill-wave-alt, .fa-heart, .fa-child, .fa-info {
-    color: #0065FC;
+#article-hebergement {
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 50px, 15px;
+  
 }
-.fa-chart-line{
-    color: #000000;
+#article-hebergement section {
+  margin: 15px;
+  padding: 5px;
+  width: 245px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 5px #838383;
+  width: 25%;
 }
-.stargrey{
-background-color: #F2F2F2;
+#article-activite {
+  display: flex;
+  margin: 0px;
 }
-.logo-bouton{
-    background-color: #DEEBFF ;
+#article-activite section {
+  margin: 15px;
+  padding: 5px;
+  width: 245px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 5px #838383;
+  width: 25%;
 }
-.bouton{
-    background-color: #0065FC; 
-    color: #ffffff;
-}
-.label-avec-logo{
-    background-color: #F2F2F2;
+#aside-hebergement-populaire {
+  display: flex;
+  flex-direction: column;
 }
 
-.article-hebergement{
-    display: flex;
-    background-color: #F2F2F2;
-}
-.article-activite{
-    display: flex;
-}
-.aside-hebergement-populaire{
-    display: flex;
-    flex-direction: column;
-}
-
-@media screen and (max-width: 1280px)
-{
-
+@media screen and (max-width: 1280px) {
 }

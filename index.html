@@ -1,114 +1,154 @@
 <!DOCTYPE html>
 <html>
-   <head>
+     <head>
     <meta charset="utf-8" />
-        <link rel="stylesheet" href="fichier-css.css" />
-        <script src="https://kit.fontawesome.com/aa1f9ebfe3.js" crossorigin="anonymous"></script>
-        <title>Premiers tests du CSS</title>
-       </head>
-<body>
-    <!-- Header -->
-       <header>
+    <link rel="stylesheet" href="fichier-css.css" />
+    <script
+      src="https://kit.fontawesome.com/aa1f9ebfe3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Premiers tests du CSS</title>
+       
+  </head>
+  <body>
+       <!-- Header -->
+       
+    <header>      
+      <div> Réservia
+          <a href="index.html" id="logo-reservia">
+            <img src="images/logo/Reservia.svg" alt="Réservia"/>
+          </a>
+        </div>
+      <div id="article-logo-et-nav">
         <!-- Titre Reservia -->
-        <h1>Réservia</h1>
-        <a href="">S'inscrire</a>
-        <nav>Hébergements Activités </nav>
-        <!-- Article leitmotiv -->
-        <article>
-            <h2>Trouver votre hébergement pour des vacances de rêves</h2>
-            <p>En plein centre ville ou en pleine nature</p>
-        </article>
-        <!-- Article Recherche -->
-        <form method="POST" action="traitement.php">
-            <!--Logo localisation  -->
-            <label for="saisie-lieu" class="label-avec-logo"><i class="fas fa-map-marker-alt"></i></label>
-            <input type="text" name="saisie-lieu" id="saisie-lieu" value="Marseille, France">
-            <input class="bouton"  type="submit" value="Rechercher">
-            <P>Filtres</P>
-            <input type="checkbox" class="checkbox">
-            Economique
-            Familial
-            Romantique
-            Animaux autorisés
-            <!-- Logo i -->
-            <p>Plus de 500 logement disponibles dans cette villes</p>
-        </form>
+        <li><a href="#" id="lien-sinscrire">S'inscrire</a></li>
+        <nav>
+          <ul>
+            
+            <li>
+              <a href="#article-hebergement" id="lien-hebergement"
+                >Hébergements</a
+              >
+            </li>
+            <li>
+              <a href="#article-activite" id="lien-activite">Activités</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Article leitmotiv -->
+      <section>
+        <h2>Trouver votre hébergement pour des vacances de rêves</h2>
+        <p>En plein centre ville ou en pleine nature</p>
+      </section>
+      <!-- Article Recherche -->
+      <form method="POST" action="traitement.php">
+        <!--Logo localisation  -->
+        <section id="zonerecherche">
+        <label for="saisie-lieu" id="label-avec-logo">
+          <div> <i class="fas fa-map-marker-alt"></i></div>
+        </label>
+        <input
+          type="text"
+          name="saisie-lieu"
+          id="saisie-lieu"
+          value="Marseille, France"
+        />
+        <input id="recherche-lieu" class="bouton"type="submit" value="Rechercher" />
+        <i class="fas fa-search"></i>
+      </section>
+        <p>Filtres</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="glissiere round"></span>
+        </label>
+        <i class="fas fa-money-bill-wave-alt"></i>
+        <i class="fas fa-child"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-dog"></i>
 
+        Economique Familial Romantique Animaux autorisés
+        <!-- Logo i -->
+        <p>Plus de 500 logement disponibles dans cette villes</p>
+      </form>
     </header>
     <main>
+         
+      <article id="article-hebergement">
            
-        <article class="article-hebergement">
-               <section id="hebergement-bloc1">
-                <a href="">
-                <img src="" alt=""/>
-                <p class="titrevignette"></p>
-                <p class="textvignette"></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-dog"></i>
-                
-                <i class="fas fa-money-bill-wave-alt"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-child"></i>
-                <i class="fas fa-info"></i>
-                <i class="fas fa-chart-line"></i>
+        <section id="hebergement-bloc1">
+          <a href="">
+            <img src="" alt="" />
+            <h3>Auberge de la cannebière</h3>
+            <p class="textvignette"></p>
+            <i class="fas fa-star"></i>
 
-</a>
-                   </section> 
-
-
-               <section id="hebergement-bloc2">
-                   </section>
-
-
-               <section id="hebergement-bloc3">
-                   </section>
-
-               <section id="hebergement-bloc4">
-                   </section>
-        </article>
-        <aside class="aside-hebergement-populaire">
-               <section id="hebergement-plus-populaire-bloc1">
-                   </section> 
-
-
-               <section id="hebergement-plus-populaire-bloc2">
-                   </section>
-
-
-               <section id="hebergement-plus-populaire-bloc3">
-                   </section>
-
-               <section id="hebergement-plus-populaire-bloc4">
-                   </section>
-        </aside>
-        <article class="article-activite"> 
-              <section id="activite-bloc1">
-                   </section>
-            <section id="activite-bloc2">
-                   </section>
-            <section id="activite-bloc3">
-                   </section>
-            <section id="activite-bloc4">
-                   </section>
-                <section id="activite-bloc5">
-                   </section>
-                <section id="activite-bloc6">
-                   </section>
-        </article>
-
-
-
+            <i class="fas fa-info"></i>
+            <i class="fas fa-chart-line"></i>
+          </a>
+             
+        </section>
+             
+        <section id="hebergement-bloc2">   </section>
 
            
-        <!-- Section 7 Gammes de prix  -->
-           <section id="price_ranges">
-               </section> 
+        <section id="hebergement-bloc3">   </section>
+
            
+        <section id="hebergement-bloc4">   </section>
+      </article>
+      <aside id="aside-hebergement-populaire">
+           
+        <section id="hebergement-plus-populaire-bloc1">   </section>
+             
+        <section id="hebergement-plus-populaire-bloc2">   </section>
+
+           
+        <section id="hebergement-plus-populaire-bloc3">   </section>
+
+           
+        <section id="hebergement-plus-populaire-bloc4">   </section>
+      </aside>
+      <article id="article-activite">
+          
+        <section id="activite-bloc1">   </section>
+        <section id="activite-bloc2">   </section>
+        <section id="activite-bloc3">   </section>
+        <section id="activite-bloc4">   </section>
+        <section id="activite-bloc5">   </section>
+        <section id="activite-bloc6">   </section>
+      </article>
+
+         
+      <!-- Section 7 Gammes de prix  -->
+         
+      <section id="price_ranges">   </section>
+           
     </main>
-       <footer>
+       
+    <footer>
+        
+      <section id="section-apropos">
+        <h3>A propos</h3>
+        <a href="#">Fonctionnement du site></a>
+        <a href="#">Conditions générales de vente</a>
+        <a href="#">Données et confidentialité</a>
+           
+      </section>
+      <section id="section-hebergement">
+        <h3>Nos hébergements</h3>
+        <a href="#">Charte qualité</a>
+        <a href="#">Soumettre votre hotel</a>
+           
+      </section>
+      <section id="section-assistance">
+        <h3>Assistance</h3>
+        <a href="#">Centre d'aide</a>
+        <a href="#">Nous contacter</a>
+           
+      </section>
 
-           </footer>
-
-</body>
-
+         
+    </footer>
+  </body>
 </html>
