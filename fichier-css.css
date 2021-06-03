@@ -2,57 +2,74 @@
 
 html {
   font-family: "Raleway", sans-serif;
+  font-size: 16px;
 }
 body {
   /* background-color: #DEEBFF; */
-  margin:15px;
+  margin-left: 50px;
+  padding: 0px;
 }
 header {
-    
+  margin-top: 0px;
+  padding-top: 0px;
+  top:0px;
 }
-
-#article-logo-et-nav nav{
-    display: flex;
-    justify-content: flex-end;
-}
-
 footer {
   background-color: #f2f2f2;
   display: flex;
 }
-#section-apropos, #section-hebergement, #section-assistance{
+/* Tous les éléments nav ok  */
+#nav-area {
   display: flex;
-  flex-direction: column;
-  width: 400px;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin-left: 5px;
 }
-
-#logo-reservia{
-    position: absolute;
-    top:60px;
-    left:55px;
-}
-
-nav ul {
+#nav-area nav {
+  top:0px;
   display: flex;
+  justify-content: flex-end;
+  margin-right: 215px;
+}
+#nav-area nav ul {
+  display: flex;
+   margin: 0px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#nav-area nav ul li {
+  width: 160px;
+  text-align: center;
   list-style-type: none;
-  height: 100px;
-  margin: 0px;;
-  align-items: stretch;
+  padding: 35px;
 }
-nav ul li{
-margin: auto;
-width:150px;
-text-align: center;
-padding: 35px;
+#logo-reservia {
+  margin-left: 55px;
+  position: absolute;
+  left: 55px;
+  width: 160px;
+  text-align: center;
+  margin: auto;
 }
 
-nav ul li:active{
-    border-top: solid ;
-    border-color: #0065fc;
+#lien-sinscrire {
+  position: absolute;
+  right: 55px;
+  width: 160px;
+  text-align: center;
+  margin: auto;
+  padding: 35px;
 }
+#lien-hebergement {
+  border-top: solid;
+  border-color: #0065fc;
+}
+
+/* #nav-area{
+  display: flex;
+  justify-content: flex-end;
+} */
+
 p {
-
   /* color: #0065FC;
     color: #DEEBFF ;
     color: #F2F2F2; */
@@ -62,46 +79,13 @@ a {
   text-decoration: none;
 }
 
-#zonerecherche{
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  height: 50px;
-}
-#saisie-lieu{
-  border-color: #f2f2f2;
-width: 235px;
-}
-#zonerecherche #recherchelieu{
- border-color: #0065fc;
-   width: 220px;
-  }
-
-#label-avec-logo{
-margin: auto;
-height: 50px;
-width: 50px;
-background-color: #f2f2f2;
-border-radius: 10px,0px,0px,10px;
-align-items: stretch;
-}
-#label-avec-logo div{
-text-align: center;
-width: 50px;
-font-size: 25px;
-display: block;
-
-}
 h1 {
 }
 h2 {
 }
 article {
-
-
 }
 section {
-
 }
 /* Zone paramétrage des arcticles avec vignette
 TODO : optimiser selection des éléments 
@@ -112,19 +96,83 @@ article.article-activite :nth-child(5) {
 }
 article.article-activite :nth-child(6) {
 }
-.fa-search{
-    display:none;
+/* Ensemble des classes */
+.fa-search {
+  display: none;
+  flex-direction: row;
+}
+.filtre-container {
+  display: flex;
+  height: 50px;
+  margin: 12px 0px;
+  font-weight: bold;
+}
+.bouton-container {
+  border-color: #f2f2f2;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 2px;
+  display: flex;
+  margin: 0px 12px;
+  z-index: 1;
+}
+.bouton-box-logo {
+  background-color: #deebff;
+  color: #0065fc;
+  border-radius: 10px;
+  border-color: #deebff;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 14px;
+  z-index: 2;
+}
+.bouton-box-logo:hover {
+  background-color: #cfdcf0;
+  border-color: #0065fc;
+  border-width: 3px;
 }
 
-.fa-star,
+.bouton-box-text {
+  padding: 15px;
+}
+/* .fa-star,
 .fa-dog,
 .fa-money-bill-wave-alt,
 .fa-heart,
 .fa-child,
 .fa-info {
   color: #0065fc;
+} */
+
+
+
 }
-.fa-map-marker-alt, .fa-chart-line {
+#zone-info{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 25px;
+ }
+#info {
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f2f2f2;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+   }
+.fa-info {
+  color: #0065fc;
+  font-size: 14px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.fa-map-marker-alt,
+.fa-chart-line {
   color: #000000;
 }
 .stargrey {
@@ -133,19 +181,67 @@ article.article-activite :nth-child(6) {
 .logo-bouton {
   background-color: #deebff;
 }
-.bouton {
-  background-color: #0065fc;
-  color: #ffffff;
-}
+
 .label-avec-logo {
   background-color: #f2f2f2;
+}
+/* Ensemble des id */
+
+#section-apropos,
+#section-hebergement,
+#section-assistance {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: space-around;
+}
+
+/* Zone de recherche de lieu */
+#zonerecherche {
+  display: flex;
+  height: 50px;
+  }
+  #saisie-lieu {
+    border-color: #f2f2f2;
+    border-width: 1px;
+    border-style: solid;
+    width: 235px;
+    font-weight: bold;
+    padding-left: 18px;
+   }
+  .fa-map-marker-alt {
+    height: 50px;
+    margin: auto;
+    text-align: center;
+  }
+#label-avec-logo {
+  height: 50px;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  border-radius: 14px 0px 0px 14px;
+}
+#label-avec-logo div {
+  text-align: center;
+  margin: auto;
+  width: 50px;
+  font-size: 18px;
+  display: block;
+  border-width: 1px;
+}
+
+#recherche-lieu {
+  border-color: #0065fc;
+  width: 132px;
+  border-radius: 0px 14px 14px 0px;
+  border-style: none;
+  background-color: #0065fc;
+  color: #ffffff;
 }
 
 #article-hebergement {
   display: flex;
   background-color: #f2f2f2;
   padding: 50px, 15px;
-  
 }
 #article-hebergement section {
   margin: 15px;

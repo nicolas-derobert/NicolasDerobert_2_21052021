@@ -13,29 +13,27 @@
   <body>
        <!-- Header -->
        
-    <header>      
-      <div> Réservia
-          <a href="index.html" id="logo-reservia">
-            <img src="images/logo/Reservia.svg" alt="Réservia"/>
+    <header>
+      <section id="nav-area">
+        
+        <div id="logo-reservia">
+          <a href="index.html">
+            <img src="images/logo/Reservia.svg" alt="Réservia" />
           </a>
         </div>
-      <div id="article-logo-et-nav">
+        <div id="lien-sinscrire"><a href="#">S'inscrire</a></div>
         <!-- Titre Reservia -->
-        <li><a href="#" id="lien-sinscrire">S'inscrire</a></li>
         <nav>
           <ul>
-            
-            <li>
-              <a href="#article-hebergement" id="lien-hebergement"
-                >Hébergements</a
-              >
+            <li id="lien-hebergement">
+              <a href="#article-hebergement">Hébergements</a>
             </li>
-            <li>
-              <a href="#article-activite" id="lien-activite">Activités</a>
+            <li id="lien-activite">
+              <a href="#article-activite">Activités</a>
             </li>
           </ul>
         </nav>
-      </div>
+      </section>
       <!-- Article leitmotiv -->
       <section>
         <h2>Trouver votre hébergement pour des vacances de rêves</h2>
@@ -45,38 +43,59 @@
       <form method="POST" action="traitement.php">
         <!--Logo localisation  -->
         <section id="zonerecherche">
-        <label for="saisie-lieu" id="label-avec-logo">
-          <div> <i class="fas fa-map-marker-alt"></i></div>
-        </label>
-        <input
-          type="text"
-          name="saisie-lieu"
-          id="saisie-lieu"
-          value="Marseille, France"
-        />
-        <input id="recherche-lieu" class="bouton"type="submit" value="Rechercher" />
-        <i class="fas fa-search"></i>
-      </section>
-        <p>Filtres</p>
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="glissiere round"></span>
-        </label>
-        <i class="fas fa-money-bill-wave-alt"></i>
-        <i class="fas fa-child"></i>
-        <i class="fas fa-heart"></i>
-        <i class="fas fa-dog"></i>
+          <label for="saisie-lieu" id="label-avec-logo">
+            <div><i class="fas fa-map-marker-alt"></i></div>
+          </label>
+          <input
+            type="text"
+            name="saisie-lieu"
+            id="saisie-lieu"
+            value="Marseille, France"
+          />
+          <input id="recherche-lieu" type="submit" value="Rechercher" />
+          <i class="fas fa-search"></i>
+        </section>
 
-        Economique Familial Romantique Animaux autorisés
-        <!-- Logo i -->
-        <p>Plus de 500 logement disponibles dans cette villes</p>
+        <div class="filtre-container">
+          <p>Filtres</p>
+          <div class="bouton-container">
+            <div class="bouton-box-logo">
+              <i class="fas fa-money-bill-wave-alt"></i>
+            </div>
+            <div class="bouton-box-text">Economique</div>
+          </div>
+          <div class="bouton-container">
+            <div class="bouton-box-logo">
+              <i class="fas fa-child"></i>
+            </div>
+            <div class="bouton-box-text">Familial</div>
+          </div>
+          <div class="bouton-container">
+            <div class="bouton-box-logo">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="bouton-box-text">Romantique</div>
+          </div>
+          <div class="bouton-container">
+            <div class="bouton-box-logo">
+              <i class="fas fa-dog"></i>
+            </div>
+            <div class="bouton-box-text">Animaux autorisés</div>
+          </div>
+        </div>
+      <div id="zone-info">
+        <div id="info">
+          <i class="fas fa-info"></i>
+        </div>
+        <p>Plus de 500 logements disponibles dans cette ville</p>
+      </div>
       </form>
     </header>
     <main>
          
-      <article id="article-hebergement">
+      <section id="article-hebergement">
            
-        <section id="hebergement-bloc1">
+        <article id="hebergement-bloc1">
           <a href="">
             <img src="" alt="" />
             <h3>Auberge de la cannebière</h3>
@@ -87,39 +106,38 @@
             <i class="fas fa-chart-line"></i>
           </a>
              
-        </section>
+        </article>
              
-        <section id="hebergement-bloc2">   </section>
+        <article id="hebergement-bloc2">   </article>
 
            
-        <section id="hebergement-bloc3">   </section>
+        <article id="hebergement-bloc3">   </article>
 
            
-        <section id="hebergement-bloc4">   </section>
-      </article>
+        <article id="hebergement-bloc4">   </article>
+      </section>
       <aside id="aside-hebergement-populaire">
            
-        <section id="hebergement-plus-populaire-bloc1">   </section>
+        <article id="hebergement-plus-populaire-bloc1">   </article>
              
-        <section id="hebergement-plus-populaire-bloc2">   </section>
+        <article id="hebergement-plus-populaire-bloc2">   </article>
 
            
-        <section id="hebergement-plus-populaire-bloc3">   </section>
+        <article id="hebergement-plus-populaire-bloc3">   </article>
 
            
-        <section id="hebergement-plus-populaire-bloc4">   </section>
+        <article id="hebergement-plus-populaire-bloc4">   </article>
       </aside>
-      <article id="article-activite">
+      <section id="article-activite">
           
-        <section id="activite-bloc1">   </section>
-        <section id="activite-bloc2">   </section>
-        <section id="activite-bloc3">   </section>
-        <section id="activite-bloc4">   </section>
-        <section id="activite-bloc5">   </section>
-        <section id="activite-bloc6">   </section>
-      </article>
+        <article id="activite-bloc1">   </article>
+        <article id="activite-bloc2">   </article>
+        <article id="activite-bloc3">   </article>
+        <article id="activite-bloc4">   </article>
+        <article id="activite-bloc5">   </article>
+        <article id="activite-bloc6">   </article>
+      </section>
 
-         
       <!-- Section 7 Gammes de prix  -->
          
       <section id="price_ranges">   </section>
