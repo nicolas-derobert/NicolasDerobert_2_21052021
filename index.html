@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
      <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <link rel="stylesheet" href="fichier-css.css" />
     <script
@@ -93,17 +94,39 @@
     </header>
     <main>
          
-      <section id="article-hebergement">
-           
+      <section id="section-hebergement">
+           <i class="fas fa-chart-line"></i>
         <article id="hebergement-bloc1">
+          
           <a href="">
-            <img src="" alt="" />
-            <h3>Auberge de la cannebière</h3>
-            <p class="textvignette"></p>
-            <i class="fas fa-star"></i>
-
-            <i class="fas fa-info"></i>
-            <i class="fas fa-chart-line"></i>
+            <div class="hebergement-zone-image">
+              <picture>
+                <source 
+                        media="(max-width: 576px)" 
+                        srcset="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <source 
+                        media="(min-width: 768px)" 
+                        srcset="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                
+                <source 
+                        media="(min-width: 992px)" 
+                        srcset="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                
+                <source 
+                        media="(min-width: 1200px)" 
+                        srcset="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la cannebière">
+              </picture>
+            </div>
+            <div class="hebergement-zone-texte">
+              <h3>Auberge de la cannebière</h3>
+              <p class="textvignette">Nuit à partir de 25€</p>
+              <i class="fas fa-star starblue"></i>
+              <i class="fas fa-star starblue"></i>
+              <i class="fas fa-star starblue"></i>
+              <i class="fas fa-star stargrey"></i>
+          </div>
+            
           </a>
              
         </article>
@@ -115,7 +138,7 @@
 
            
         <article id="hebergement-bloc4">   </article>
-      </section>
+      
       <aside id="aside-hebergement-populaire">
            
         <article id="hebergement-plus-populaire-bloc1">   </article>
@@ -127,8 +150,9 @@
 
            
         <article id="hebergement-plus-populaire-bloc4">   </article>
+      </section>
       </aside>
-      <section id="article-activite">
+      <section id="section-activite">
           
         <article id="activite-bloc1">   </article>
         <article id="activite-bloc2">   </article>

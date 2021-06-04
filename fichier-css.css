@@ -1,5 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+/* A CLASSER */
 
+.fa-chart-line {
+  color: #000000;
+}
+.stargrey {
+ color: #f2f2f2;
+}
+.starblue {
+  color: #0065fc;
+}
+
+/* Ensemble des classes */
+
+.fa-dog,
+.fa-money-bill-wave-alt,
+.fa-heart,
+.fa-child,
+.fa-info {
+  color: #0065fc;
+} 
+p {
+line-height: 1px;
+}
+
+
+
+
+
+/*
+.logo-bouton {
+  background-color: #deebff;
+}
+
+ .label-avec-logo {
+  background-color: #f2f2f2;
+} */
+/* Ensemble des id */
+
+#section-activite {
+  display: flex;
+  margin: 0px;
+}
+#section-activite article {
+  margin: 15px;
+  padding: 5px;
+  width: 245px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 5px #838383;
+  width: 25%;
+}
+#aside-hebergement-populaire {
+  display: flex;
+  flex-direction: column;
+}
+
+/* DEBUT */
 html {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -8,6 +66,10 @@ body {
   /* background-color: #DEEBFF; */
   margin-left: 50px;
   padding: 0px;
+}
+a {
+  color: #000000;
+  text-decoration: none;
 }
 header {
   margin-top: 0px;
@@ -18,6 +80,10 @@ footer {
   background-color: #f2f2f2;
   display: flex;
 }
+img{
+  width: 100%;
+}
+
 /* Tous les éléments nav ok  */
 #nav-area {
   display: flex;
@@ -50,7 +116,6 @@ footer {
   text-align: center;
   margin: auto;
 }
-
 #lien-sinscrire {
   position: absolute;
   right: 55px;
@@ -64,39 +129,52 @@ footer {
   border-color: #0065fc;
 }
 
-/* #nav-area{
+
+
+
+/* Zone de recherche de lieu ok a part bouton rond*/
+#zonerecherche {
   display: flex;
-  justify-content: flex-end;
-} */
+  height: 50px;
+  }
+  #label-avec-logo {
+    height: 50px;
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    border-radius: 14px 0px 0px 14px;
+  }
+  #label-avec-logo div {
+    text-align: center;
+    margin: auto;
+    width: 50px;
+    font-size: 18px;
+    display: block;
+    border-width: 1px;
+  }
+  #saisie-lieu {
+    border-color: #f2f2f2;
+    border-width: 1px;
+    border-style: solid;
+    width: 235px;
+    font-weight: bold;
+    padding-left: 18px;
+   }
+  .fa-map-marker-alt {
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    color: #000000;
+  }
+  #recherche-lieu {
+  border-color: #0065fc;
+  width: 132px;
+  border-radius: 0px 14px 14px 0px;
+  border-style: none;
+  background-color: #0065fc;
+  color: #ffffff;
+}
 
-p {
-  /* color: #0065FC;
-    color: #DEEBFF ;
-    color: #F2F2F2; */
-}
-a {
-  color: #000000;
-  text-decoration: none;
-}
-
-h1 {
-}
-h2 {
-}
-article {
-}
-section {
-}
-/* Zone paramétrage des arcticles avec vignette
-TODO : optimiser selection des éléments 
- */
-article.article-activite :nth-child(3) {
-}
-article.article-activite :nth-child(5) {
-}
-article.article-activite :nth-child(6) {
-}
-/* Ensemble des classes */
+/* Zone des filtes */
 .fa-search {
   display: none;
   flex-direction: row;
@@ -132,22 +210,12 @@ article.article-activite :nth-child(6) {
   border-color: #0065fc;
   border-width: 3px;
 }
-
 .bouton-box-text {
   padding: 15px;
 }
-/* .fa-star,
-.fa-dog,
-.fa-money-bill-wave-alt,
-.fa-heart,
-.fa-child,
-.fa-info {
-  color: #0065fc;
-} */
 
 
-
-}
+/* Zone avec texte d'information */
 #zone-info{
   display: flex;
   justify-content: start;
@@ -162,6 +230,7 @@ article.article-activite :nth-child(6) {
   text-align: center;
   width: 25px;
   height: 25px;
+  margin-right: 12px;
    }
 .fa-info {
   color: #0065fc;
@@ -170,107 +239,75 @@ article.article-activite :nth-child(6) {
   text-align: center;
 }
 
+/* Zone hebergement */
 
-.fa-map-marker-alt,
-.fa-chart-line {
-  color: #000000;
+#section-hebergement a img{
+  border-radius: 10px 10px 0px 0px;
 }
-.stargrey {
-  background-color: #f2f2f2;
+#section-hebergement a {
+  display: flex;
+  flex-direction: column;
 }
-.logo-bouton {
-  background-color: #deebff;
+div.hebergement-zone-image{
+height: 115px;
+}
+div.hebergement-zone-texte{
+  height: 80px
 }
 
-.label-avec-logo {
-  background-color: #f2f2f2;
-}
-/* Ensemble des id */
-
-#section-apropos,
-#section-hebergement,
-#section-assistance {
+#section-apropos,#section-hebergement,#section-assistance {
   display: flex;
   flex-direction: column;
   width: 400px;
   justify-content: space-around;
 }
-
-/* Zone de recherche de lieu */
-#zonerecherche {
-  display: flex;
-  height: 50px;
-  }
-  #saisie-lieu {
-    border-color: #f2f2f2;
-    border-width: 1px;
-    border-style: solid;
-    width: 235px;
-    font-weight: bold;
-    padding-left: 18px;
-   }
-  .fa-map-marker-alt {
-    height: 50px;
-    margin: auto;
-    text-align: center;
-  }
-#label-avec-logo {
-  height: 50px;
-  background-color: #f2f2f2;
-  border-color: #f2f2f2;
-  border-radius: 14px 0px 0px 14px;
-}
-#label-avec-logo div {
-  text-align: center;
-  margin: auto;
-  width: 50px;
-  font-size: 18px;
-  display: block;
-  border-width: 1px;
-}
-
-#recherche-lieu {
-  border-color: #0065fc;
-  width: 132px;
-  border-radius: 0px 14px 14px 0px;
-  border-style: none;
-  background-color: #0065fc;
-  color: #ffffff;
-}
-
-#article-hebergement {
+#section-hebergement {
   display: flex;
   background-color: #f2f2f2;
   padding: 50px, 15px;
 }
-#article-hebergement section {
+#section-hebergement article {
   margin: 15px;
   padding: 5px;
-  width: 245px;
-  height: 200px;
+  min-width: 245px;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 4px 4px 5px #838383;
   width: 25%;
+  }
+
+
+
+/* Zone paramétrage des arcticles avec vignette
+TODO : optimiser selection des éléments 
+ */
+article.article-activite :nth-child(3) {
 }
-#article-activite {
-  display: flex;
-  margin: 0px;
+article.article-activite :nth-child(5) {
 }
-#article-activite section {
-  margin: 15px;
-  padding: 5px;
-  width: 245px;
-  height: 200px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: 4px 4px 5px #838383;
-  width: 25%;
-}
-#aside-hebergement-populaire {
-  display: flex;
-  flex-direction: column;
+article.article-activite :nth-child(6) {
 }
 
-@media screen and (max-width: 1280px) {
-}
+
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (
+  @media screen and (max-width: 576px) {
+  
+  ... }
+
+// Medium devices (tablets, 768px and up)
+@media screen and (
+  @media screen and (max-width: 768px) {
+  
+  ... }
+
+// Large devices (desktops, 992px and up)
+@media screen and (max-width: 992px) {
+  
+  ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media screen and (max-width: 1200px) {
+  
+  ... }
