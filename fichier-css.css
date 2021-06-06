@@ -46,8 +46,7 @@ line-height: 1px;
   margin: 15px;
   padding: 5px;
   width: 245px;
-  height: 200px;
-  border-radius: 10px;
+   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 4px 4px 5px #838383;
   width: 25%;
@@ -81,7 +80,7 @@ footer {
   display: flex;
 }
 img{
-  width: 100%;
+  max-height: 100%;
 }
 
 /* Tous les éléments nav ok  */
@@ -249,10 +248,10 @@ img{
   flex-direction: column;
 }
 div.hebergement-zone-image{
-height: 115px;
+max-height: 120px;
 }
-div.hebergement-zone-texte{
-  height: 80px
+div.hebergement-zone-texte picture img{
+max-height:  80px
 }
 
 #section-apropos,#section-hebergement,#section-assistance {
