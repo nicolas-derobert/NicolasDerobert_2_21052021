@@ -16,23 +16,23 @@
        <!-- Header -->
        
     <header>
-      <section id="sectionNav">
-        <div id="logo-reservia">
+      <section>
+        <div id="div__logo-reservia">
           <a href="index.html">
             <img src="images/logo/Reservia.svg" alt="Réservia" />
           </a>
         </div>
-        <div id="lien-sinscrire">
+        <div id="div__lien-sinscrire">
           <a href="#">S'inscrire</a>
         </div>
 
-        <nav id="nav__zonenav">
-          <ul id="ul__zonenav">
-            <li id="li__lien-hebergement" class="li__liennav">
-              <a href="#article-hebergement">Hébergements</a>
+        <nav class="nav__zonenav">
+          <ul class="nav__list">
+            <li id="item__zone-hebergement" class="nav__element-de-liste">
+              <a href="#section__tousleshebergements">Hébergements</a>
             </li>
-            <li id="li__lien-activite" class="li__liennav">
-              <a href="#article-activite">Activités</a>
+            <li id="li__lien-activite" class="nav__element-de-liste">
+              <a href="#section__activite">Activités</a>
             </li>
           </ul>
         </nav>
@@ -46,54 +46,54 @@
       <form method="POST" action="traitement.php">
         <!--Logo localisation  -->
         <section id="zonerecherche">
-          <label for="saisie-lieu" id="label-avec-logo">
-            <div><i class="fas fa-map-marker-alt"></i></div>
+          <label for="zonerecherche__saisie-lieu" id="zonerecherche-logo">
+            <div id="zonerecherche__container-logo"><i class="fas fa-map-marker-alt"></i></div>
           </label>
           <input
             type="text"
-            name="saisie-lieu"
-            id="saisie-lieu"
+            name="zonerecherche__saisie-lieu"
+            id="zonerecherche__saisie-lieu"
             value="Marseille, France"
           />
-          <div id="div__inputoptionecranlarge">
-            <input id="input__optionecranlarge" type="submit" value="Rechercher" />
+          <div id="zonerecherche__zone-btn-ecran-large">
+            <input id="zonerecherche__btn-ecran-large" type="submit" value="Rechercher" />
           </div>
-          <div id="div__inputoptionpetitecran">
-            <input id="input__optionpetitecran" type="submit" value="" />
-            <div><i class="fas fa-search"></i></div>
+          <div id="zonerecherche__zone-btn-ecran-petit">
+            <input id="zonerecherche__btn-ecran-petit" type="submit" value="" />
+            <div id="zonerecherche__container-logo-ecran-petit"><i class="fas fa-search"></i></div>
           </div>      
         </section>
         
         <div class="filtre-container"><p class="bold">Filtres</p>
           <div class="bouton-container">
-            <div class="bouton-box-logo">
+            <div class="bouton__box-logo">
               <i class="fas fa-money-bill-wave-alt"></i>
             </div>
             <p></p>
-            <div class="bouton-box-text"><p>Economique</p></div>
+            <div class="bouton__box-text"><p>Economique</p></div>
           </div>
           <div class="bouton-container">
-            <div class="bouton-box-logo">
+            <div class="bouton__box-logo">
               <i class="fas fa-child"></i>
             </div>
-            <div class="bouton-box-text"><p>Familial</p></div>
+            <div class="bouton__box-text"><p>Familial</p></div>
           </div>
           <div class="bouton-container">
-            <div class="bouton-box-logo">
+            <div class="bouton__box-logo">
               <i class="fas fa-heart"></i>
             </div>
-            <div class="bouton-box-text"><p>Romantique</p></div>
+            <div class="bouton__box-text"><p>Romantique</p></div>
           </div>
           <div class="bouton-container">
-            <div class="bouton-box-logo">
+            <div class="bouton__box-logo">
               <i class="fas fa-dog"></i>
             </div>
-            <div class="bouton-box-text"><p>Animaux autorisés</p></div>
+            <div class="bouton__box-text"><p>Animaux autorisés</p></div>
           </div>
         </div>
       </form>
-      <div id="zone-info">
-        <div id="info">
+      <div class="zone-info">
+        <div class="zone-info__logo">
           <i class="fas fa-info"></i>
         </div>
         <p>Plus de 500 logements disponibles dans cette ville</p>

@@ -65,25 +65,25 @@ img{
 }
 
 /* Tous les éléments nav ok  */
-#nav__zonenav {
+.nav__zonenav {
   display: flex;
   justify-content: flex-end;
   top: 0px;
   margin-right: 215px;
 }
-#ul__zonenav {
+.nav__list {
   display: flex;
   margin: 0px;
   flex-direction: row;
   justify-content: flex-end;
 }
-.li__liennav {
+.nav__element-de-liste {
   width: 160px;
   text-align: center;
   list-style-type: none;
   padding: 35px 15%;
 }
-#logo-reservia {
+#div__logo-reservia {
   margin-left: 55px;
   position: absolute;
   left: 55px;
@@ -91,7 +91,7 @@ img{
   text-align: center;
   margin: auto;
 }
-#lien-sinscrire {
+#div__lien-sinscrire {
   position: absolute;
   right: 55px;
   width: 160px;
@@ -101,11 +101,11 @@ img{
   color: #0065fc;
   font-weight: bold;
 }
-#lien-sinscrire a {
+#div__lien-sinscrire a {
   color: #0065fc;
   font-weight: bold;
 }
-#li__lien-hebergement {
+#item__zone-hebergement {
   border-top: solid;
   border-color: #0065fc;
   color: #0065fc;
@@ -115,13 +115,13 @@ img{
   display: flex;
   height: 50px;
 }
-#label-avec-logo {
+#zonerecherche-logo{
   height: 50px;
   background-color: #f2f2f2;
   border-color: #f2f2f2;
   border-radius: 14px 0px 0px 14px;
 }
-#label-avec-logo div {
+#zonerecherche__container-logo {
   text-align: center;
   margin: auto;
   width: 50px;
@@ -129,7 +129,7 @@ img{
   display: block;
   border-width: 1px;
 }
-#saisie-lieu {
+#zonerecherche__saisie-lieu {
   border-color: #f2f2f2;
   border-width: 1px;
   border-style: solid;
@@ -143,10 +143,8 @@ img{
   text-align: center;
   color: #000000;
 }
-#div__inputoptionecranlarge{
 
-}
-#div__inputoptionpetitecran{
+#zonerecherche__zone-btn-ecran-petit{
   height: 50px;
   background-color: #0065fc;
   border-color: #0065fc;
@@ -154,10 +152,10 @@ img{
   border-radius: 14px;
   display: none;
 }
-#div__inputoptionpetitecran input{
+#zonerecherche__btn-ecran-petit{
 display: none;
 }
-#div__inputoptionpetitecran div{
+#zonerecherche__container-logo-ecran-petit{
   text-align: center;
   margin: auto;
   width: 50px;
@@ -165,7 +163,7 @@ display: none;
   display: block;
   border-width: 1px;
   }
-#input__optionecranlarge {
+#zonerecherche__btn-ecran-large {
   border-color: #0065fc;
   width: 132px;
   border-radius: 0px 14px 14px 0px;
@@ -173,9 +171,6 @@ display: none;
   background-color: #0065fc;
   color: #ffffff;
   height: 50px;
-}
-#input__inputoptionpetitecran {
-
 }
 .fa-search {
   height: 50px;
@@ -203,7 +198,7 @@ display: none;
   z-index: 1;
   margin-top: 10px;
 }
-.bouton-box-logo {
+.bouton__box-logo {
   position: relative;
   left: -1px;
   top: 0px;
@@ -226,28 +221,28 @@ display: none;
   margin: auto;
 }
 
-.bouton-box-logo:hover {
+.bouton__box-logo:hover {
   background-color: #cfdcf0;
   border-color: #0065fc;
 }
-.bouton-box-text{
+.bouton__box-text{
   margin: auto;
  }
  
-.bouton-box-text p{
+.bouton__box-text p{
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 /* Zone avec texte d'information */
-#zone-info {
+.zone-info {
   display: flex;
   justify-content: start;
   align-items: center;
   height: 25px;
 }
-#info {
+.zone-info__logo {
   border-radius: 20px;
   border-style: solid;
   border-width: 2px;
@@ -537,7 +532,7 @@ article.article-activite :nth-child(6) {
     left: 0px;
     margin: 0px;
   }
-  #ul__zonenav {
+  #nav__list {
     display: flex;
     margin: 0px;
     flex-direction: row;
@@ -547,13 +542,13 @@ article.article-activite :nth-child(6) {
     padding: 0px;
   }
 
-  .li__liennav {
+  .nav__element-de-liste {
     width: 50%;
     text-align: center;
     list-style-type: none;
     padding: 35px;
   }
-  #logo-reservia {
+  #div__logo-reservia {
     margin-left: 20px;
     position: absolute;
     top: 10px;
@@ -578,7 +573,7 @@ article.article-activite :nth-child(6) {
     border-color: #f2f2f2;
   }
 
-  #li__lien-hebergement {
+  #item__zone-hebergement {
     border-top: none;
     border-bottom: solid;
     border-color: #0065fc;
@@ -603,7 +598,7 @@ article.article-activite :nth-child(6) {
     display: block;
     border-width: 1px;
   }
-  #saisie-lieu {
+  #zonerecherche__saisie-lieu {
     border-color: #f2f2f2;
     border-width: 1px;
     border-style: solid;
@@ -645,12 +640,12 @@ article.article-activite :nth-child(6) {
 
 
   
-  .bouton-box-logo:hover {
+  .bouton__box-logo:hover {
     background-color: #cfdcf0;
     border-color: #0065fc;
     border-width: 3px;
   }
-  .bouton-box-text {
+  .bouton__box-text {
     padding: 15px;
   }
   /* Zone hebergement */
