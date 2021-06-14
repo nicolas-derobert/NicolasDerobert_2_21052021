@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/aa1f9ebfe3.js"
       crossorigin="anonymous"
     ></script>
-    <title>Premiers tests du CSS</title>
+    <title>Reservia</title>
        
   </head>
   <body>
@@ -32,13 +32,13 @@
               <a href="#section__tousleshebergements">Hébergements</a>
             </li>
             <li id="li__lien-activite" class="nav__element-de-liste">
-              <a href="#section__activite">Activités</a>
+              <a href="#activite">Activités</a>
             </li>
           </ul>
         </nav>
       </section>
       <!-- Article leitmotiv -->
-      <section>
+      <section id="section__leitmotiv">
         <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
         <p>En plein centre ville ou en pleine nature</p>
       </section>
@@ -46,7 +46,7 @@
       <form method="POST" action="traitement.php">
         <!--Logo localisation  -->
         <section id="zonerecherche">
-          <label for="zonerecherche__saisie-lieu" id="zonerecherche-logo">
+          <label for="zonerecherche__saisie-lieu" id="zonerecherche__label">
             <div id="zonerecherche__container-logo"><i class="fas fa-map-marker-alt"></i></div>
           </label>
           <input
@@ -64,27 +64,27 @@
           </div>      
         </section>
         
-        <div class="filtre-container"><p class="bold">Filtres</p>
-          <div class="bouton-container">
+        <div class="filtres"><p>Filtres</p>
+          <div class="bouton">
             <div class="bouton__box-logo">
               <i class="fas fa-money-bill-wave-alt"></i>
             </div>
             <p></p>
             <div class="bouton__box-text"><p>Economique</p></div>
           </div>
-          <div class="bouton-container">
+          <div class="bouton">
             <div class="bouton__box-logo">
               <i class="fas fa-child"></i>
             </div>
             <div class="bouton__box-text"><p>Familial</p></div>
           </div>
-          <div class="bouton-container">
+          <div class="bouton">
             <div class="bouton__box-logo">
               <i class="fas fa-heart"></i>
             </div>
             <div class="bouton__box-text"><p>Romantique</p></div>
           </div>
-          <div class="bouton-container">
+          <div class="bouton">
             <div class="bouton__box-logo">
               <i class="fas fa-dog"></i>
             </div>
@@ -101,12 +101,12 @@
     </header>
      
     <section id="section__tousleshebergements">
-      <section id="section__hebergement">
+      <section id="hebergements">
         <h2>Hébergements à Marseille</h2>
-        <div id="div__containerarticleshebergement">
+        <div id="hebergement__container-carte">
           <a href="#"
-            ><article class="article__hebergement">
-              <div class="div__hebergement-zone-image">
+            ><article class="carte-hebergement">
+              <div class="carte-hebergement__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -138,7 +138,7 @@
                   />
                 </picture>
               </div>
-              <div class="div__hebergement-zone-texte">
+              <div class="carte-hebergement__zone-texte">
                 
                   <h3>Auberge de la cannebière</h3>
                   <p class="p__textvignette">Nuit à partir de 25<span class="euro">€</span></p>
@@ -153,8 +153,8 @@
               </article
           ></a>
           <a href="#"
-            ><article class="article__hebergement">
-              <div class="div__hebergement-zone-image">
+            ><article class="carte-hebergement">
+              <div class="carte-hebergement__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -186,7 +186,7 @@
                   />
                 </picture>
               </div>
-              <div class="div__hebergement-zone-texte">
+              <div class="carte-hebergement__zone-texte">
                 <h3>Hôtel du port</h3>
                 <p class="p__textvignette">Nuit à partir de 52<span class="euro">€</span></p>
                 <i class="fas fa-star starblue"></i>
@@ -197,8 +197,8 @@
               </div></article
           ></a>
           <a href="#"
-            ><article class="article__hebergement">
-              <div class="div__hebergement-zone-image">
+            ><article class="carte-hebergement">
+              <div class="carte-hebergement__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -228,7 +228,7 @@
                   />
                 </picture>
               </div>
-              <div class="div__hebergement-zone-texte">
+              <div class="carte-hebergement__zone-texte">
                 <h3>Hôtel les mouettes</h3>
                 <p class="p__textvignette">Nuit à partir de 76<span class="euro">€</span></p>
                 <i class="fas fa-star starblue"></i>
@@ -239,8 +239,8 @@
               </div></article
           ></a>
           <a href="#"
-            ><article class="article__hebergement">
-              <div class="div__hebergement-zone-image">
+            ><article class="carte-hebergement">
+              <div class="carte-hebergement__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -272,7 +272,7 @@
                   />
                 </picture>
               </div>
-              <div class="div__hebergement-zone-texte">
+              <div class="carte-hebergement__zone-texte">
                 <h3>Hôtel de la mer</h3>
                 <p class="p__textvignette">Nuit à partir de 46<span class="euro">€</span></p>
                 <i class="fas fa-star starblue"></i>
@@ -283,8 +283,8 @@
               </div></article
           ></a>
           <a href="#"
-            ><article class="article__hebergement">
-              <div class="div__hebergement-zone-image">
+            ><article class="carte-hebergement">
+              <div class="carte-hebergement__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -316,7 +316,7 @@
                   />
                 </picture>
               </div>
-              <div class="div__hebergement-zone-texte">
+              <div class="carte-hebergement__zone-texte">
                 <h3>Auberge le Panier</h3>
                 <p class="p__textvignette">Nuit à partir de 23<span class="euro">€</span></p>
                 <i class="fas fa-star starblue"></i>
@@ -327,8 +327,8 @@
               </div></article
           ></a>
           <a href="#"
-            ><article class="article__hebergement">
-              <div class="div__hebergement-zone-image">
+            ><article class="carte-hebergement">
+              <div class="carte-hebergement__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -360,7 +360,7 @@
                   />
                 </picture>
               </div>
-              <div class="div__hebergement-zone-texte">
+              <div class="carte-hebergement__zone-texte">
                 <h3>Hôtel chez Amina</h3>
                 <p class="p__textvignette">Nuit à partir de 96<span class="euro">€</span></p>
                 <i class="fas fa-star starblue"></i>
@@ -373,17 +373,18 @@
         </div>
         <p id="section__lienafficherplus"><a href="#">Afficher plus</a></p>
       </section>
-      <aside id="aside__hebergementpopulaire">
-        <div id="div__containerhebergementpopulaire">
-          <div id="div__zonetitrehebergementpopulaire">
-            <h2>Les plus populaires</h2>
-            <div>
-              <i class="fas fa-chart-line"></i>
-            </div>
+      <aside id="hebergements-populaires">
+        <div id="hebergements-populaires__zone-titre">
+          <h2>Les plus populaires</h2>
+          <div>
+            <i class="fas fa-chart-line"></i>
           </div>
+        </div>
+        <div id="hebergements-populaires__container">
+          
           <a href="">
-            <article class="article__hebergementpopulaire">
-              <div class="div__hebergementpopulaire-zone-image">
+            <article class="carte-hebergement-populaire">
+              <div class="carte-hebergement-populaire__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -415,10 +416,10 @@
                   />
                 </picture>
               </div>
-              <div class="div__hebergementpopulaire-zone-texte"><div class="div__hebergement-zone-texte-descriptif">
+              <div class="carte-hebergement-populaire__zone-texte"><div class="carte-hebergement__zone-texte-descriptif">
                 <h3>Hôtel Le soleil du matin</h3>
                 <p class="p__textvignette">Nuit à partir de 128<span class="euro">€</span></p></div>
-                <div class="div__hebergement-zone-texte-etoile">
+                <div class="carte-hebergement__zone-texte-etoile">
                 <div class="div__hebergementpopulairestars">
                   <i class="fas fa-star starblue"></i>
                   <i class="fas fa-star starblue"></i>
@@ -430,8 +431,8 @@
             </article>
           </a>
           <a href="">
-            <article class="article__hebergementpopulaire">
-              <div class="div__hebergementpopulaire-zone-image">
+            <article class="carte-hebergement-populaire">
+              <div class="carte-hebergement-populaire__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -463,11 +464,11 @@
                   />
                 </picture>
               </div>
-              <div class="div__hebergementpopulaire-zone-texte">
-                <div class="div__hebergement-zone-texte-descriptif">
+              <div class="carte-hebergement-populaire__zone-texte">
+                <div class="carte-hebergement__zone-texte-descriptif">
                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                 <p class="p__textvignette">Nuit à partir de 71 <span class="euro">€</span></p></div>
-                <div class="div__hebergement-zone-texte-etoile">
+                <div class="carte-hebergement__zone-texte-etoile">
                 <i class="fas fa-star starblue"></i>
                 <i class="fas fa-star starblue"></i>
                 <i class="fas fa-star starblue"></i>
@@ -476,8 +477,8 @@
             </article>
           </a>
           <a href="">
-            <article class="article__hebergementpopulaire">
-              <div class="div__hebergementpopulaire-zone-image">
+            <article class="carte-hebergement-populaire">
+              <div class="carte-hebergement-populaire__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -509,12 +510,12 @@
                   />
                 </picture>
               </div>
-              <div class="div__hebergementpopulaire-zone-texte">
-                <div class="div__hebergement-zone-texte-descriptif">
+              <div class="carte-hebergement-populaire__zone-texte">
+                <div class="carte-hebergement__zone-texte-descriptif">
                 <h3>Hôtel Tout bleu et Blanc</h3>
                 <p class="p__textvignette">Nuit à partir de 68<span class="euro">€</span></p>
               </div>
-                <div class="div__hebergement-zone-texte-etoile">
+                <div class="carte-hebergement__zone-texte-etoile">
                   <i class="fas fa-star starblue"></i>
                   <i class="fas fa-star starblue"></i>
                   <i class="fas fa-star starblue"></i>
@@ -526,14 +527,14 @@
         </div>
       </aside>
     </section>
-    <section id="section__activite">
+    <section id="activite">
       <h2>Activités à Marseilles</h2>
-      <div id="div__containerarticlesactivite">
-        <div id="div__containerarticlesactivitepart1">
-          <div id="div__containerarticlesactivitepart1zonea">  
+      <div id="activite__container-cartes">
+        <div id="activite__container-cartes-partie1">
+          <div id="activite__container-cartes-partie1-zonea">  
             <a href="#"
-            ><article class="article__activiteaffichage1">
-              <div class="div__activite-zone-image">
+            ><article class="activite__affichage-type1">
+              <div class="carte-activite__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -565,15 +566,15 @@
                   />
                 </picture>
               </div>
-              <div class="div__activite-zone-texte">
+              <div class="carte-activite__zone-texte">
                 <h3>Vieux port</h3>
               </div>
             </article></a
           ></div>
-          <div id="div__containerarticlesactivitepart1zoneb">
+          <div id="activite__container-cartes-partie1-zoneb">
           <a href="#"
-            ><article class="article__activiteaffichage2">
-              <div class="div__activite-zone-image">
+            ><article class="activite__affichage-type2">
+              <div class="carte-activite__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -605,13 +606,13 @@
                   />
                 </picture>
               </div>
-              <div class="div__activite-zone-texte">
+              <div class="carte-activite__zone-texte">
                 <h3>Fort de Pomègue</h3>
               </div>
             </article></a
           ><a href="#"
-            ><article class="article__activiteaffichage3">
-              <div class="div__activite-zone-image">
+            ><article class="activite__affichage-type3">
+              <div class="carte-activite__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -643,16 +644,16 @@
                   />
                 </picture>
               </div>
-              <div class="div__activite-zone-texte">
+              <div class="carte-activite__zone-texte">
                 <h3>Îles du Frioul</h3>
               </div>
             </article></a
           ></div>
         </div>
-        <div id="div__containerarticlesactivitepart2">
-          <div id="div__containerarticlesactivitepart2zonea"><a href="#"
-            ><article class="article__activiteaffichage1">
-              <div class="div__activite-zone-image">
+        <div id="activite__container-cartes-partie2">
+          <div id="activite__container-cartes-partie2-zonea"><a href="#"
+            ><article class="activite__affichage-type1">
+              <div class="carte-activite__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -684,14 +685,14 @@
                   />
                 </picture>
               </div>
-              <div class="div__activite-zone-texte">
+              <div class="carte-activite__zone-texte">
                 <h3>Parc national des Calanques</h3>
               </div>
             </article></a
           ></div>
-          <div id="div__containerarticlesactivitepart2zoneb"><a href="#"
-            ><article class="article__activiteaffichage4">
-              <div class="div__activite-zone-image">
+          <div id="activite__container-cartes-partie2-zoneb"><a href="#"
+            ><article class="activite__affichage-type4">
+              <div class="carte-activite__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -723,13 +724,13 @@
                   />
                 </picture>
               </div>
-              <div class="div__activite-zone-texte">
+              <div class="carte-activite__zone-texte">
                 <h3>Notre-Dame-de-la-Guarde</h3>
               </div>
             </article></a
           ><a href="#"
-            ><article class="article__activiteaffichage5">
-              <div class="div__activite-zone-image">
+            ><article class="activite__affichage-type5">
+              <div class="carte-activite__zone-image">
                 <picture>
                   <source
                     media="(max-width: 576px)"
@@ -761,7 +762,7 @@
                   />
                 </picture>
               </div>
-              <div class="div__activite-zone-texte">
+              <div class="carte-activite__zone-texte">
                 <h3>Parc Longchamp</h3>
               </div>
             </article></a
@@ -773,7 +774,7 @@
 
        
     <footer>
-      <section id="footer--section--apropos">
+      <section id="footer__section-a-propos">
         <h3>A propos</h3>
         <p>
           <a href="#">Fonctionnement du site</a>
@@ -785,7 +786,7 @@
           <a href="#">Données et confidentialité</a>
         </p>
       </section>
-      <section id="footer--section--hebergement">
+      <section id="footer__section-a-hebergement">
         <h3>Nos hébergements</h3>
         <p>
           <a href="#">Charte qualité</a>
@@ -794,7 +795,7 @@
           <a href="#">Soumettre votre hotel</a>
         </p>
       </section>
-      <section id="footer--section--assistance">
+      <section id="footer__section-a-assistance">
         <h3>Assistance</h3>
         <p>
           <a href="#">Centre d'aide</a>
