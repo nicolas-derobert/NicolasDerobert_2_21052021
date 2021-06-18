@@ -1,9 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 /* Le code css est structuré dans l'odre suivant : Balises structurantes puis définition des propriétés des classes et des div sont définies dans l'ordre d'apparition du flux html puis définition des media querries */
+/* Import de la police Ralway de puis googleapi font*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700&display=swap');
 /* Balises structurantes */
 html {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+}
+h3 {
+  margin-top: 0.3em;
+  margin-bottom: 0.1em;
+  line-height: 1.1em;
 }
 body {
   margin: 0px;
@@ -31,13 +37,12 @@ footer {
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-around;
+  padding-right: 17%;
 }
 h2 {
   font-weight: bold;
 }
 h3 {
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
   font-weight: bold;
 }
 p {
@@ -47,7 +52,6 @@ p {
 }
 
 /* Elément euro et éléments logo FontAwesome répartis dans toute la page */
-
 .euro {
   font-weight: bold;
 }
@@ -136,6 +140,9 @@ p {
   border-color: #f2f2f2;
   border-radius: 14px 0px 0px 14px;
 }
+label {
+  display: none;
+}
 #zonerecherche__container-logo {
   text-align: center;
   margin: auto;
@@ -200,22 +207,18 @@ p {
 /* Zone des filtres */
 #filtres__groupe-boutons {
   display: flex;
-  align-items: center;
   margin: 1% 0%;
   font-weight: bold;
   margin-top: 20px;
 }
-
-.filtres{
+.filtres {
   display: flex;
   flex-direction: row;
 }
-#filtres__titre{
+#filtres__titre {
   margin: auto 0px;
 }
-#filtres__groupe-boutons {
-  margin: auto;
-}
+
 .bouton {
   border-color: #f2f2f2;
   border-radius: 49px;
@@ -250,8 +253,8 @@ p {
 }
 
 .bouton__box-logo:hover {
-  background-color: #cfdcf0;
-  border-color: #0065fc;
+  background-color: #bbc7d8;
+  border-color:#bbc7d8;
 }
 .bouton__box-text {
   margin: auto;
@@ -291,9 +294,8 @@ p {
 /* Zone tous les hebergements */
 #section__tousleshebergements {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
-
 }
 /* Zone hebergement */
 #hebergements {
@@ -303,17 +305,17 @@ p {
   padding-left: 2%;
   padding-right: 2%;
 }
-#section__lienafficherplus {
+#p__afficher-plus {
   margin: 20px 2%;
   font-size: 18px;
   font-weight: bold;
 }
 #hebergements img {
   border-radius: 10px 10px 0px 0px;
-  max-height: 100%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: 100% 80%;
+  object-position: 100% 74%;
 }
 #hebergements h2 {
   margin-top: 50px;
@@ -322,7 +324,7 @@ p {
 
 #hebergement__container-carte a {
   flex: 0 0 30%;
-   margin-top: 15px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 #hebergement__container-carte {
@@ -334,7 +336,6 @@ p {
   align-content: space-around;
 }
 .carte-hebergement {
- 
   padding: 5px;
   border-radius: 10px;
   background-color: #ffffff;
@@ -345,15 +346,18 @@ p {
   height: 120px;
 }
 .carte-hebergement__zone-texte {
-  height: 80px;
-  /* line-height: 0.3em; */
+  height: 90px;
+   width: 100%;
+  display: flex;
+flex-direction: column;
+justify-content: space-around;
 }
 
 /*Zone aside*/
 #hebergements-populaires {
   background-color: #f2f2f2;
   width: 28%;
-  padding: 50px, 15px;
+  padding: 0px 15px;
   margin-right: 2%;
   margin-left: 2%;
   border-radius: 25px;
@@ -361,10 +365,10 @@ p {
 #hebergements-populaires img {
   border-radius: 10px 0px 0px 10px;
   height: 100%;
+  width: 100%;
   object-fit: cover;
-  object-position: 100% 100%;
+  object-position: 10% 90%;
 }
-
 
 #hebergements-populaires__zone-titre {
   margin-right: 5%;
@@ -390,10 +394,6 @@ p {
 }
 
 #hebergements-populaires__container a {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -402,10 +402,7 @@ p {
 #hebergements-populaires__container {
   display: flex;
   flex-direction: column;
-
 }
-
-
 
 .carte-hebergement-populaire {
   display: flex;
@@ -417,7 +414,7 @@ p {
   height: 145px;
   border-radius: 10px;
   background-color: #ffffff;
-  box-shadow: 4px 4px 5px #838383;  
+  box-shadow: 4px 4px 5px #838383;
   margin: auto;
 }
 .carte-hebergement-populaire__zone-image {
@@ -446,7 +443,6 @@ p {
   display: flex;
   flex-flow: row wrap;
   margin-left: 2%;
-  
 }
 #activite__container-cartes-partie1,
 #activite__container-cartes-partie2 {
@@ -482,7 +478,40 @@ p {
   background-color: #ffffff;
   box-shadow: 4px 4px 5px #f2f2f2;
 }
-.activite__affichage-type1 {
+.carte-activite__zone-texte {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.activite__affichage-type1 img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.activite__affichage-type2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.activite__affichage-type3 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.activite__affichage-type4 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.activite__affichage-type5 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* .activite__affichage-type1 {
   height: 450px;
 }
 .activite__affichage-type2 {
@@ -496,33 +525,7 @@ p {
 }
 .activite__affichage-type5 {
   height: 210px;
-}
-.activite__affichage-type1 img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-.activite__affichage-type2 img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-}
-.activite__affichage-type3 img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-}
-.activite__affichage-type4 img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-}
-.activite__affichage-type5 img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-}
-
+} */
 .activite__affichage-type1 .carte-activite__zone-image {
   height: 390px;
 }
@@ -538,6 +541,12 @@ p {
 .activite__affichage-type5 .carte-activite__zone-image {
   height: 150px;
 }
+.carte-activite__zone-texte {
+  height: 60px;
+}
+.carte-activite__zone-texte h3 {
+    text-align: left;
+}
 
 /*Zone footer*/
 #section-apropos,
@@ -550,21 +559,15 @@ p {
 
 /* Zonemedia */
 @media screen and (max-width: 768px) {
-  
   header {
     margin-left: 2%;
     margin-right: 2%;
-
   }
   main {
     margin-left: 0%;
     margin-right: 0%;
   }
-  h3 {
-    margin-top: 0.3em;
-    margin-bottom: 0.8em;
-    line-height: 1.1em;
-  }
+ 
   p {
     margin-bottom: 0.8em;
   }
@@ -627,15 +630,13 @@ p {
     display: none;
   }
 
-  #zonerecherche__container-logo-ecran-petit {
-  }
   #zonerecherche__btn-ecran-large {
     display: none;
   }
 
   /* Zone des filtres */
 
-  .filtres{
+  .filtres {
     display: flex;
     flex-direction: column;
   }
@@ -645,8 +646,8 @@ p {
     margin: 12px 0px;
     font-weight: bold;
   }
- 
-  #filtres__titre{
+
+  #filtres__titre {
     margin-top: 30px;
   }
 
@@ -683,7 +684,6 @@ p {
 
   /*Zone aside*/
 
-
   #hebergements-populaires {
     width: 100%;
     /* margin-right: 40px; */
@@ -694,7 +694,7 @@ p {
   #hebergements-populaires img {
     border-radius: 10px 0px 0px 10px;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   #hebergements-populaires__zone-titre {
@@ -839,15 +839,14 @@ p {
     height: 120px;
   }
   .carte-hebergement-populaire__zone-texte {
-    height: 165px;
+    height: 185px;
   }
   .carte-hebergement-populaire {
-    height: 165px;
+    height: 185px;
   }
-  }
+}
 @media screen and (min-width: 1600px) {
   #activite article {
     margin: 15px 10%;
-      }
+  }
 }
-
