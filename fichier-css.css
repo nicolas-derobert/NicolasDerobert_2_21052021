@@ -21,8 +21,8 @@ a {
 }
 header {
   margin-top: 0px;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
   padding-top: 0px;
   top: 0px;
 }
@@ -89,17 +89,16 @@ p {
   padding: 35px 15%;
 }
 #div__logo-reservia {
-  margin-left: 55px;
   position: absolute;
-  left: 55px;
-  width: 160px;
+  left: 4%;
+  width: auto;
   text-align: center;
   margin: auto;
 }
 #div__lien-sinscrire {
   position: absolute;
-  right: 55px;
-  width: 160px;
+  right: 2%;
+  width: auto;
   text-align: center;
   margin: auto;
   padding: 35px;
@@ -136,6 +135,7 @@ p {
 }
 #zonerecherche__label {
   height: 50px;
+  width: 50px;
   background-color: #f2f2f2;
   border-color: #f2f2f2;
   border-radius: 14px 0px 0px 14px;
@@ -146,7 +146,6 @@ label {
 #zonerecherche__container-logo {
   text-align: center;
   margin: auto;
-  width: 50px;
   font-size: 18px;
   display: block;
   border-width: 1px;
@@ -156,7 +155,7 @@ label {
   border-color: #f2f2f2;
   border-width: 1px;
   border-style: solid;
-  width: 235px;
+  width: 30%;
   font-weight: bold;
   padding-left: 18px;
 }
@@ -190,7 +189,9 @@ label {
 }
 #zonerecherche__btn-ecran-large {
   border-color: #0065fc;
-  width: 132px;
+  width: auto;
+  padding-left: 25%;
+  padding-right: 25%;
   border-radius: 0px 14px 14px 0px;
   border-style: none;
   background-color: #0065fc;
@@ -209,7 +210,7 @@ label {
   display: flex;
   margin: 1% 0%;
   font-weight: bold;
-  margin-top: 20px;
+  flex-wrap: wrap;
 }
 .filtres {
   display: flex;
@@ -225,9 +226,8 @@ label {
   border-style: solid;
   border-width: 2px;
   display: flex;
-  margin: 0px 12px;
+  margin: 5px 12px;
   z-index: 1;
-  margin-top: 10px;
 }
 .bouton__box-logo {
   position: relative;
@@ -258,6 +258,7 @@ label {
 }
 .bouton__box-text {
   margin: auto;
+  white-space: nowrap;
 }
 
 .bouton__box-text p {
@@ -304,6 +305,9 @@ label {
   border-radius: 25px;
   padding-left: 2%;
   padding-right: 2%;
+  margin-right: 1%;
+  margin-left: 1%;
+  
 }
 #p__afficher-plus {
   margin: 20px 2%;
@@ -349,6 +353,7 @@ label {
   height: 90px;
    width: 100%;
   display: flex;
+  padding-left: 5%;
 flex-direction: column;
 justify-content: space-around;
 }
@@ -358,8 +363,10 @@ justify-content: space-around;
   background-color: #f2f2f2;
   width: 28%;
   padding: 0px 15px;
-  margin-right: 2%;
-  margin-left: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-right: 1%;
+  margin-left: 1%;
   border-radius: 25px;
 }
 #hebergements-populaires img {
@@ -481,6 +488,7 @@ justify-content: space-around;
 .carte-activite__zone-texte {
   height: 100%;
   width: 100%;
+  padding-left: 5%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -560,8 +568,8 @@ justify-content: space-around;
 /* Zonemedia */
 @media screen and (max-width: 768px) {
   header {
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
   main {
     margin-left: 0%;
@@ -661,10 +669,11 @@ justify-content: space-around;
   /* Zone hebergement */
 
   #hebergements {
-    width: 100%;
+    width: 96%;
     background-color: #ffffff;
-    margin-right: 0px;
     border-radius: 0px;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   #hebergement__container-carte {
@@ -685,7 +694,7 @@ justify-content: space-around;
   /*Zone aside*/
 
   #hebergements-populaires {
-    width: 100%;
+    width: 96%;
     /* margin-right: 40px; */
     border-radius: 0px;
     margin-left: 0%;
@@ -844,9 +853,35 @@ justify-content: space-around;
   .carte-hebergement-populaire {
     height: 185px;
   }
+  #section__tousleshebergements{
+  flex-direction: column;
+  }
+  #hebergements {
+    margin-top: 20px;
+    width:96%;
+  }
+  #hebergements-populaires{
+    margin-top: 20px;
+    width:96%;
+  }
+ 
 }
 @media screen and (min-width: 1600px) {
   #activite article {
     margin: 15px 10%;
+  }
+  body{
+    max-width: 80%;
+    margin: auto;
+  }
+  #div__logo-reservia {
+
+    left: 13%;
+
+  }
+  #div__lien-sinscrire {
+
+    right: 12%;
+
   }
 }
