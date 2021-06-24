@@ -1,6 +1,6 @@
 /* Le code css est structuré dans l'odre suivant : Balises structurantes puis définition des propriétés des classes et des div sont définies dans l'ordre d'apparition du flux html puis définition des media querries */
 /* Import de la police Ralway de puis googleapi font*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700&display=swap");
 /* Balises structurantes */
 html {
   font-family: "Raleway", sans-serif;
@@ -74,7 +74,7 @@ p {
   display: flex;
   justify-content: flex-end;
   top: 0px;
-  margin-right: 215px;
+  margin-right: 11%;
 }
 .nav__list {
   display: flex;
@@ -88,6 +88,8 @@ p {
   list-style-type: none;
   padding: 35px 15%;
 }
+
+
 #div__logo-reservia {
   position: absolute;
   left: 4%;
@@ -111,7 +113,11 @@ p {
 }
 #item__zone-hebergement {
   border-top: solid;
+  border-width: 1px;
   border-color: #0065fc;
+  color: #0065fc;
+}
+#item__zone-hebergement a {
   color: #0065fc;
 }
 
@@ -127,37 +133,40 @@ p {
   margin-bottom: 2em;
 }
 
+
 /* Zone de recherche de lieu */
 #zonerecherche {
   display: flex;
+  justify-content: left;
   height: 50px;
+  width: 40%;
   z-index: 2;
 }
 #zonerecherche__label {
+  display: block;
+  flex-basis: 15%;
   height: 50px;
-  width: 50px;
+  max-width: 50px;
+  min-width: 50px;
+  margin: 0;
+  font-size: 18px;
+  border-width: 1px;
+  border-radius: 14px 0px 0px 14px;
+  text-align: center;
   background-color: #f2f2f2;
   border-color: #f2f2f2;
-  border-radius: 14px 0px 0px 14px;
 }
 label {
   display: none;
 }
-#zonerecherche__container-logo {
-  text-align: center;
-  margin: auto;
-  font-size: 18px;
-  display: block;
-  border-width: 1px;
-}
 
 #zonerecherche__saisie-lieu {
+   flex-basis: 70%;
+   padding-left: 10%;
+  font-weight: bold;
   border-color: #f2f2f2;
   border-width: 1px;
   border-style: solid;
-  width: 30%;
-  font-weight: bold;
-  padding-left: 18px;
 }
 .fa-map-marker-alt {
   height: 50px;
@@ -166,37 +175,37 @@ label {
   color: #000000;
 }
 #zonerecherche__zone-btn-ecran-petit {
+  display: none;
+  position: relative;
+  left: -2%;
+  flex-basis: 15%;
+  max-width: 50px;
+min-width: 50px;
   height: 50px;
+  margin: 0;
+  font-size: 18px;
+  border-width: 1px;
+  text-align: center;
   background-color: #0065fc;
   border-color: #0065fc;
   color: #ffffff;
   border-radius: 14px;
-  display: none;
-  position: relative;
-  right: 10px;
-}
+ }
 #zonerecherche__btn-ecran-petit {
   display: none;
   z-index: 1;
 }
-#zonerecherche__container-logo-ecran-petit {
-  text-align: center;
-  margin: auto;
-  width: 50px;
-  font-size: 18px;
-  display: block;
-  border-width: 1px;
-}
+
 #zonerecherche__btn-ecran-large {
-  border-color: #0065fc;
   width: auto;
+  height: 50px;
   padding-left: 25%;
   padding-right: 25%;
   border-radius: 0px 14px 14px 0px;
   border-style: none;
+  border-color: #0065fc;
   background-color: #0065fc;
   color: #ffffff;
-  height: 50px;
 }
 .fa-search {
   height: 50px;
@@ -249,12 +258,13 @@ label {
 .fa-heart,
 .fa-child {
   height: 51px;
+  font-size: 1.3em;
   margin: auto;
 }
 
 .bouton__box-logo:hover {
   background-color: #bbc7d8;
-  border-color:#bbc7d8;
+  border-color: #bbc7d8;
 }
 .bouton__box-text {
   margin: auto;
@@ -271,9 +281,10 @@ label {
 .zone-info {
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items:flex-start;
   height: 25px;
-  margin-top: 20px;
+  margin: 20px 4% 10px 1%;
+  
 }
 .zone-info__logo {
   border-radius: 20px;
@@ -282,14 +293,12 @@ label {
   border-color: #f2f2f2;
   text-align: center;
   width: 25px;
-  height: 25px;
   margin-right: 12px;
 }
 .fa-info {
   color: #0065fc;
-  font-size: 14px;
+  font-size: 0.9em;
   margin: auto;
-  text-align: center;
 }
 
 /* Zone tous les hebergements */
@@ -307,10 +316,9 @@ label {
   padding-right: 2%;
   margin-right: 1%;
   margin-left: 1%;
-  
 }
 #p__afficher-plus {
-  margin: 20px 2%;
+  margin: 30px 2% 40px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -323,6 +331,7 @@ label {
 }
 #hebergements h2 {
   margin-top: 50px;
+  margin-left: 2%;
   font-weight: 900;
 }
 
@@ -351,11 +360,12 @@ label {
 }
 .carte-hebergement__zone-texte {
   height: 90px;
-   width: 100%;
+  width: 97%;
   display: flex;
-  padding-left: 5%;
-flex-direction: column;
-justify-content: space-around;
+  padding-left: 4%;
+  padding-right: 4%;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /*Zone aside*/
@@ -417,8 +427,8 @@ justify-content: space-around;
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 90%;
-  padding: 5px;
   height: 145px;
+  padding: 5px;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 4px 4px 5px #838383;
@@ -431,7 +441,7 @@ justify-content: space-around;
 
 .carte-hebergement-populaire__zone-texte {
   flex: 0 0 60%;
-  height: 145px;
+  /* height: 145px; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -439,37 +449,43 @@ justify-content: space-around;
 
 /*Zone activité */
 #section-activite {
-  margin: 0px;
+  margin: 1%;
 }
 
 #activite h2 {
-  margin: 50px;
+  margin: 50px 1.5% 0px;
   font-weight: 900;
 }
 #activite__container-cartes {
   display: flex;
   flex-flow: row wrap;
-  margin-left: 2%;
 }
 #activite__container-cartes-partie1,
 #activite__container-cartes-partie2 {
-  width: 50%;
+  width: 48%;
   display: flex;
   flex-flow: row wrap;
+}
+#activite__container-cartes-partie1 {
+  margin-right: 4%; 
 }
 #activite__container-cartes-partie1 a,
 #activite__container-cartes-partie2 a {
   display: flex;
   flex-flow: row wrap;
-  margin: 15px;
+  margin:8% 0% 8% 0%;
 }
 #activite__container-cartes-partie1-zonea,
 #activite__container-cartes-partie2-zonea {
-  width: 50%;
+  width: 45%;
+  margin-right: 4%;  
+  margin-left: 1%; 
 }
 #activite__container-cartes-partie1-zoneb,
 #activite__container-cartes-partie2-zoneb {
-  width: 50%;
+  width: 42%;
+  margin-left: 4%;
+  margin-right: 3%; 
   display: flex;
   flex-flow: column;
 }
@@ -479,11 +495,10 @@ justify-content: space-around;
 }
 
 #activite article {
-  padding: 5px;
   border-radius: 10px 10px 10px 10px;
   border-radius: 10px;
   background-color: #ffffff;
-  box-shadow: 4px 4px 5px #f2f2f2;
+  box-shadow:  7px 5px 5px -3px #f2f2f2, 0px 5px 10px #f2f2f2, -7px 5px 5px -3px #f2f2f2;
 }
 .carte-activite__zone-texte {
   height: 100%;
@@ -519,21 +534,7 @@ justify-content: space-around;
   width: 100%;
   height: 100%;
 }
-/* .activite__affichage-type1 {
-  height: 450px;
-}
-.activite__affichage-type2 {
-  height: 240px;
-}
-.activite__affichage-type3 {
-  height: 165px;
-}
-.activite__affichage-type4 {
-  height: 200px;
-}
-.activite__affichage-type5 {
-  height: 210px;
-} */
+
 .activite__affichage-type1 .carte-activite__zone-image {
   height: 390px;
 }
@@ -553,7 +554,7 @@ justify-content: space-around;
   height: 60px;
 }
 .carte-activite__zone-texte h3 {
-    text-align: left;
+  text-align: left;
 }
 
 /*Zone footer*/
@@ -563,6 +564,10 @@ justify-content: space-around;
   flex-direction: column;
   width: 30%;
   justify-content: space-around;
+}
+footer h3{
+  margin-top: 0.9em;
+  margin-bottom: 0.9em;
 }
 
 /* Zonemedia */
@@ -575,7 +580,7 @@ justify-content: space-around;
     margin-left: 0%;
     margin-right: 0%;
   }
- 
+
   p {
     margin-bottom: 0.8em;
   }
@@ -617,7 +622,7 @@ justify-content: space-around;
     left: 0px;
   }
   #div__lien-sinscrire {
-    right: 0px;
+    right: 4%;
     top: 10px;
     padding: 10px;
   }
@@ -628,6 +633,9 @@ justify-content: space-around;
   }
 
   /* Zone de recherche de lieu */
+  #zonerecherche {
+    width: 100%;
+  }
   #zonerecherche__zone-btn-ecran-petit {
     display: block;
   }
@@ -674,6 +682,11 @@ justify-content: space-around;
     border-radius: 0px;
     margin-left: 0%;
     margin-right: 0%;
+    order: 2;
+  }
+  #p__afficher-plus {
+    margin: 10px 3% 40px;
+
   }
 
   #hebergement__container-carte {
@@ -699,11 +712,10 @@ justify-content: space-around;
     border-radius: 0px;
     margin-left: 0%;
     margin-right: 0%;
+    order: 1;
   }
   #hebergements-populaires img {
-    border-radius: 10px 0px 0px 10px;
-    height: 100%;
-    object-fit: cover;
+     object-position: 55% 78%;
   }
 
   #hebergements-populaires__zone-titre {
@@ -714,26 +726,36 @@ justify-content: space-around;
     position: relative;
     right: 0px;
   }
-
+  #hebergements-populaires__container a {
+    margin: 8px 3%;
+  }
   .carte-hebergement-populaire {
     width: 93%;
     margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
-  carte-hebergement-populaire__zone-image {
-    overflow: hidden;
+  .carte-hebergement-populaire__zone-image {
+    flex: 0 0 34%;
+  }
+  
+  .carte-hebergement-populaire__zone-texte {
+    flex: 0 0 60%;
   }
 
   /*Zone activité */
   #section-activite {
     margin: 0px;
   }
+  #activite h2 {
+      margin: auto;
+      width: 90%;
+  }
   #activite__container-cartes {
     display: flex;
     flex-flow: column wrap;
-    margin-left: 2%;
+    margin: 2%;
   }
   #activite__container-cartes-partie1,
   #activite__container-cartes-partie2 {
@@ -741,29 +763,34 @@ justify-content: space-around;
     display: flex;
     flex-flow: column wrap;
   }
+  #activite__container-cartes-partie1 {
+    margin-right: 0%; 
+  }
   #activite__container-cartes-partie1 a,
   #activite__container-cartes-partie2 a {
     display: flex;
     flex-flow: column wrap;
+    margin: 0%;
+
   }
   #activite__container-cartes-partie1-zonea,
   #activite__container-cartes-partie2-zonea {
     width: 100%;
+    margin: 0%;
   }
   #activite__container-cartes-partie1-zoneb,
   #activite__container-cartes-partie2-zoneb {
     width: 100%;
+    margin: 0%;
     display: flex;
     flex-flow: column;
   }
 
   #activite article {
     margin: 15px;
-    padding: 5px;
     border-radius: 10px 10px 10px 10px;
     border-radius: 10px;
     background-color: #ffffff;
-    box-shadow: 4px 4px 5px #f2f2f2;
   }
   .activite__affichage-type1 {
     height: 200px;
@@ -826,12 +853,12 @@ justify-content: space-around;
     flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .carte-activite__zone-texte h3 {
-    align-self: center;
-    margin: auto;
+    /* align-self:flex-start;
+    margin: auto; */
   }
   footer {
     display: flex;
@@ -848,40 +875,34 @@ justify-content: space-around;
     height: 120px;
   }
   .carte-hebergement-populaire__zone-texte {
-    height: 185px;
+    /* height: 185px; */
   }
   .carte-hebergement-populaire {
-    height: 185px;
+    /* height: 185px; */
   }
-  #section__tousleshebergements{
-  flex-direction: column;
+  #section__tousleshebergements {
+    flex-direction: column;
   }
   #hebergements {
     margin-top: 20px;
-    width:96%;
+    width: 94%;
   }
-  #hebergements-populaires{
+  #hebergements-populaires {
     margin-top: 20px;
-    width:96%;
+    width: 94%;
   }
- 
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1800px) {
   #activite article {
-    margin: 15px 10%;
-  }
-  body{
-    max-width: 80%;
+    margin: 15px 0% 15px 4%;  }
+  body {
+    max-width: 70%;
     margin: auto;
   }
   #div__logo-reservia {
-
-    left: 13%;
-
+    left: 17.5%;
   }
   #div__lien-sinscrire {
-
-    right: 12%;
-
+    right: 16.5%;
   }
 }
